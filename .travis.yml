@@ -8,4 +8,4 @@ before_install:
   - docker build -t cpaun/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -r CI=true cpaun/docker-react npm run test 
+  - docker run -e CI=true cpaun/docker-react npm run test 
